@@ -1,0 +1,30 @@
+{
+  "name": "@app/main",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "haul": "haul",
+    "install.ios": "react-native run-ios --no-packager"
+  },
+  "dependencies": {
+    "react": "16.5.0",
+    "react-native": "0.57.2",
+    "@app/views": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.16",
+    "@types/react-native": "^0.57.4",
+    "babel-jest": "23.6.0",
+    "babel-loader": "^8.0.4",
+    "haul": "^1.0.0-rc.8",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.48.0",
+    "react-test-renderer": "16.5.0",
+    "ts-loader": "^5.2.1",
+    "typescript": "^3.1.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
