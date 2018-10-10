@@ -14,7 +14,7 @@ export default class App extends React.Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Views TEST Screen</Text>
+        <Text style={styles.welcome}>Views TEST Screen!</Text>
       </View>
     );
   }

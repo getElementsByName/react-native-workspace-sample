@@ -12,7 +12,11 @@
       "**"
     ]
   },
-  "scripts": {},
+  "scripts": {
+    "main/haul": "yarn workspace @app/main haul",
+    "main/install.ios": "yarn workspace @app/main install.ios",
+    "views/expo": "yarn workspace @app/views start"
+  },
   "author": "",
   "license": "ISC"
 }
