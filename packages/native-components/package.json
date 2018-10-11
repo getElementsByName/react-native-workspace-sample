@@ -1,17 +1,18 @@
 {
-  "name": "@app/main",
+  "name": "@app/native-components",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "run:packager": "haul",
+    "run:ios": "react-native run-ios --project-path ./example/ios",
+    "start:android": "adb shell am start -n com.nativecomponents.example/.MainActivity",
+    "run:android": "./gradlew installDebug && npm run start:android",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "haul": "haul",
     "install.ios": "react-native run-ios --no-packager"
   },
   "dependencies": {
     "react": "16.5.0",
-    "react-native": "0.57.2",
-    "@app/views": "^0.1.0",
-    "@app/native-components": "^0.1.0"
+    "react-native": "0.57.2"
   },
   "devDependencies": {
     "@types/react": "^16.4.16",
