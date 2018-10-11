@@ -1,4 +1,4 @@
-package com.nativecomponents;
+package com.nativecomponents.example;
 
 import com.facebook.react.ReactActivity;
 

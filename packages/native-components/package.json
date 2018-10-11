@@ -5,9 +5,10 @@
   "scripts": {
     "run:packager": "haul",
     "run:ios": "react-native run-ios --project-path ./example/ios",
-    "start:android": "adb shell am start -n com.nativecomponents.example/.MainActivity",
-    "run:android": "./gradlew installDebug && npm run start:android",
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "run:android:js-serve": "adb reverse tcp:8081 tcp:8081",
+    "run:android": "yarn run run:android:js-serve & adb shell am start -n com.nativecomponents.example/.MainActivity",
+    "install:android": "./tools/gradlew -p ./tools installDebug",
+    "man:install:android": "echo ./example/android/gradlew(gradle wrapper) -p ./example/android(project path) installDebug(install debug apk)",
     "install.ios": "react-native run-ios --no-packager"
   },
   "dependencies": {

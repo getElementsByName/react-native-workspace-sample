@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "haul": "haul",
-    "install.ios": "react-native run-ios --no-packager"
+    "install.ios": "react-native run-ios --no-packager",
+    "install.android": "react-native run-android --no-packager"
   },
   "dependencies": {
     "react": "16.5.0",
